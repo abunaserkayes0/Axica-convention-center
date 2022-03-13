@@ -180,6 +180,16 @@
       </div>
     </header>
     <main>
+  <!-- Toast Section -->
+    <div aria-live="polite" aria-atomic="true" class="position-fixed bottom-0 end-0">
+      <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header border border-3 border-primary">
+          <img src="images/icon/Vector.png" class="rounded me-2" alt="...">
+          <strong class="me-auto">20% off on next booking</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
       <!-- Package-Section -->
       <div class="container my-5 py-3">
         <h2 class="text-center fw-bold my-5">Our Package</h2>
@@ -350,6 +360,8 @@
         </div>
       </div>
     </main>
+
+    <!-- Footer Section -->
     <footer>
       <div class="container p-4">
         <div class="row align-items-center justify-content-between">
@@ -371,6 +383,15 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script>
+    var option={
+      animation:true,
+    }  
+    var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+    var toastList = toastElList.map(function (toastEl) {
+    return new bootstrap.Toast(toastEl, option)
+})
+    </script>
     <!-- Font-awesome Link -->
     <script src="https://kit.fontawesome.com/d48a6e867f.js" crossorigin="anonymous"></script>
   </body>
