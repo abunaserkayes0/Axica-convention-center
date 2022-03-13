@@ -31,6 +31,10 @@ li {
   margin-right: 3px;
   font-weight: bold;
 }
+footer{
+    background-color: #0B0D17;
+    height:280px;
+}
 @media only screen and (max-width: 767px) {
   .carousel-item {
     height: 30rem;
