@@ -31,9 +31,14 @@ li {
   margin-right: 3px;
   font-weight: bold;
 }
-footer{
-    background-color: #0B0D17;
-    height:280px;
+.document-title {
+  font-size: 70px;
+  font-weight: bold;
+  color: lightslategray;
+}
+footer {
+  background-color: #0b0d17;
+  height: 280px;
 }
 @media only screen and (max-width: 767px) {
   .carousel-item {
